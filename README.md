@@ -1,0 +1,22 @@
+# 👋 Hey, soy Alvaro
+ 
+Tengo estudios en **administración de sistemas** y en **ciberseguridad** <br>
+Aquí voy recopilando mis proyectos y experimentos mientras sigo aprendiendo.
+
+---
+## 🧰 Herramientas y frameworks
+
+Tengo experiencia con diversas herramientas y frameworks, las cuales utilizo en los proyectos incluidos en este repositorio, entre ellas:
+
+Nmap, Wireshark, Burp Suite, Metasploitable...
+
+
+
+## 🧩 Laboratorios de pentesting y CTFs
+
+Laboratorio utilizando la máquina vulnerable metasploitable:
+> *(Pronto añadiré mis repositorios más interesantes por aquí)*  
+
+---
+
+Gracias por pasarte.
