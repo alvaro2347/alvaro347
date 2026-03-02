@@ -15,7 +15,7 @@ Nmap, Wireshark, Burp Suite, Metasploitable...
 ## 🧩 Laboratorios de pentesting y CTFs
 
 Laboratorio utilizando la máquina vulnerable metasploitable:
-> *(Pronto añadiré mis repositorios más interesantes por aquí)*  https://github.com/alvaro2347/alvaro347/blob/main/metasploitable.md
+> *(Pronto añadiré mis repositorios más interesantes por aquí)* [metasploitable](https://github.com/alvaro2347/alvaro347/blob/main/metasploitable.md)
 
 ---
 
