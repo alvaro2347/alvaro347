@@ -1,4 +1,4 @@
-Lo primero ha realizar es preparar el laboratorio, asique utilizando VMware importo la máquina Metasploitable y creo una VM de Kali Linux que utilizaré como mi máquina principal, luego creo una red virtual y la asigno a los adaptadores de red de la máquina Kali linux y a la máquina Metasploitable <br>
+Lo primero ha realizar es preparar el laboratorio, asique utilizando VMware importo la máquina Metasploitable y creo una VM de Kali Linux que utilizaré como mi máquina principal, luego creo una red virtual y la asigno a los adaptadores de red de la máquina Kali linux y Metasploitable <br>
 <img width="454" height="144" alt="image" src="https://github.com/user-attachments/assets/6d00ba28-92df-4ef0-b66d-f0239bc37247" />
 
 Utilizo netdiscover para ver los hosts que hay en la red y veo que la IP de la máquina metasploitable es 192.168.92.137
