@@ -33,3 +33,7 @@ Busco los exploits para la versión de vsftpd 2.3.4<br>
 
 Descargo el exploit encontrado y lo ejecuto sobre el target, obteniendo así una shell como root
 <img width="504" height="311" alt="image" src="https://github.com/user-attachments/assets/4936486a-454f-4cd4-94b4-c3b608136b08" />
+
+Habia otro script el cual es un módulo de metasploit, asique abro la consola de metasploit, ejecuto el script sobre el target y veo que igualmente obtengo una shell como root
+<img width="655" height="566" alt="image" src="https://github.com/user-attachments/assets/cfffe310-cafc-44de-ba37-baaaaa525530" />
+<img width="977" height="431" alt="image" src="https://github.com/user-attachments/assets/2bdf96f4-337e-45d7-9565-b31ca0f43059" />
