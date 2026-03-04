@@ -14,3 +14,10 @@ Con el siguiente comando filtro todos los puertos descubiertos por nmap para pod
 
 Realizo un escaneo de vulnerabilidades sobre todos los puertos que he descubierto
 <img width="1476" height="667" alt="image" src="https://github.com/user-attachments/assets/0923dae2-b0c7-41d6-a052-cefecbe2790e" />
+
+Luego realizo un escaneo de vulnerabilidades
+<img width="1483" height="30" alt="image" src="https://github.com/user-attachments/assets/de9ea56b-709b-4aa9-bd37-942e8983f8f6" />
+
+Hay vulnerabilidades en la mayoria de los puertos, asique realizo una investigación sobre los mas relevantes:
+
+Puerto 21:
