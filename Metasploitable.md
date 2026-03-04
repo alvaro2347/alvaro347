@@ -12,7 +12,7 @@ Realizo un escaneo con nmap sobre todos los puertos de la máquina, realizo un S
 Con el siguiente comando filtro todos los puertos descubiertos por nmap para poder copiarlos en el siguiente comando de nmap
 <img width="1433" height="55" alt="image" src="https://github.com/user-attachments/assets/2e913270-6601-4979-a21b-873ec4b67665" />
 
-Realizo un escaneo de vulnerabilidades sobre todos los puertos que he descubierto
+Realizo un escaneo de versiones sobre todos los puertos que he descubierto
 <img width="1476" height="667" alt="image" src="https://github.com/user-attachments/assets/0923dae2-b0c7-41d6-a052-cefecbe2790e" />
 
 Luego realizo un escaneo de vulnerabilidades utilizando los scripts por defecto de nmap
