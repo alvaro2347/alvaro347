@@ -1,4 +1,4 @@
-# Puerto 21:
+# Puerto 21
 
 Es un servicio FTP con versión vsftpd 2.3.4 y el usuario anónimo de FTP está habilitado
 <img width="450" height="278" alt="image" src="https://github.com/user-attachments/assets/b7290a4e-3fb8-48ce-bd31-376fed00f5c6" />
