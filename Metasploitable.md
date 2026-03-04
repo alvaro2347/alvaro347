@@ -20,5 +20,5 @@ Luego realizo un escaneo de vulnerabilidades utilizando los scripts por defecto 
 
 Hay vulnerabilidades en la mayoria de los puertos, asique realizo una investigación sobre los mas relevantes:
 
-Puerto 21:
+## Puerto 21:
 <img width="450" height="278" alt="image" src="https://github.com/user-attachments/assets/b7290a4e-3fb8-48ce-bd31-376fed00f5c6" />
