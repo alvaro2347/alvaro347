@@ -4,6 +4,6 @@ Como con nmap no encuentro una vulnerabilidad en el puerto 22, utilizo la consol
 <img width="616" height="98" alt="image" src="https://github.com/user-attachments/assets/d9827992-67b8-44d2-ade2-d7bd92a857ac" />
 
 
-Pruebo a acceder por SSH con esos usuarios, con root no lo logro, pero con msfadmin consigo acceder, adicionalmente he tenido que añadir la flag que se ve abajo ya que sino rechaza la conexión
+Pruebo a acceder por SSH con esos usuarios, con root no lo logro, pero con msfadmin consigo acceder, adicionalmente he tenido que añadir la flag que se ve abajo ya que sino rechaza la conexión debido a que tiene una versión antigua de SSH
 <img width="653" height="404" alt="image" src="https://github.com/user-attachments/assets/8810e525-2642-4efc-b4ea-d96d0e12fa7d" />
 
