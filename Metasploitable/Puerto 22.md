@@ -1,5 +1,5 @@
 Hay un servicio SSH en el puerto <img width="532" height="114" alt="image" src="https://github.com/user-attachments/assets/8041c583-8907-4f78-9e49-a07cbf7318ba" />
-Como con nmap no encuentro una vulnerabilidad en el puerto 22, utilizo la consola obtenida desde el puerto anterior para obtener los usuarios a traves del fichero /etc/passwd
+Como con nmap no encuentro una vulnerabilidad en el puerto 22, utilizo la consola obtenida desde el puerto anterior para obtener los usuarios a traves del fichero /etc/passwd<br>
 <img width="616" height="98" alt="image" src="https://github.com/user-attachments/assets/d9827992-67b8-44d2-ade2-d7bd92a857ac" />
 
 
