@@ -21,3 +21,12 @@ Luego realizo un escaneo de vulnerabilidades utilizando los scripts por defecto 
 Hay vulnerabilidades en la mayoria de los puertos, asique realizo una investigación sobre los mas relevantes:
 
 > [Puerto 21](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Puerto%2021.md)
+> [Puerto 22]
+> [Puerto 23]
+> [Puerto 25]
+> [Puerto 111]
+> [Puertos 139 y 445]
+> [Puerto 1524]
+> [Puerto 3306]
+> [Puerto 3632]
+> [Puerto 5900]
