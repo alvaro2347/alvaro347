@@ -27,6 +27,6 @@ Hay vulnerabilidades en la mayoria de los puertos, asique realizo una investigac
 > [Puerto 111](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Puerto%20111.md)
 > [Puertos 139 y 445](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Puertos%20139%20y%20445.md)
 > [Puerto 1524](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Puerto%201524.md)
-> [Puerto 3306]
+> [Puerto 3306](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Puerto%203306.md)
 > [Puerto 3632]
 > [Puerto 5900]
