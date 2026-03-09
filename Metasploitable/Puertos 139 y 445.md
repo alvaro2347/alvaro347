@@ -13,6 +13,6 @@ Con smbclient consigo conectarme al share “tmp” y listar su contenido<br>
 Desde la máquina Kali Linux pongo un netcat a la escucha para enviar una shell reversa desde el target<br>
 <img width="233" height="70" alt="image" src="https://github.com/user-attachments/assets/45c85422-d2ba-4656-8d80-6815858381ad" />
 
-Ejecuto el siguiente coomando para mandar la shell reversa, pide la contraseña de la máquina Kali linux y compruebo que la shell se ha creado correctamente
+Ejecuto el siguiente comando para mandar la shell reversa, pide la contraseña de la máquina Kali linux y compruebo que la shell se ha creado correctamente<br>
 <img width="459" height="34" alt="image" src="https://github.com/user-attachments/assets/e3186940-301b-42c9-a931-63ca471e9aff" />
 <img width="533" height="82" alt="image" src="https://github.com/user-attachments/assets/c0aa2212-ae9d-4697-82f5-2fe3d00da9a3" />
