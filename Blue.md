@@ -18,9 +18,8 @@ Abro la shell y compruebo que soy un usuario privilegiado de Windows <br>
 <img width="522" height="188" alt="image" src="https://github.com/user-attachments/assets/c98dee0c-55a2-49db-b0f2-9ad6f032cc67" /><br>
 Busco los procesos que estan ejecutandose en la máquina<br>
 <img width="253" height="292" alt="image" src="https://github.com/user-attachments/assets/11602bc1-8987-4c0c-8db4-46c7dd3d9f50" />
-migro a un proceso que pertenezca al usuario nt authority\system para asegurar que el proceso tambien tenga privilegios<br>
+migro a un proceso que pertenezca al usuario nt authority\system para asegurar que el proceso tambien tenga privilegios, luego obtengo los hashes de las contraseñas de los usuarios de la máquina<br>
 <img width="704" height="135" alt="image" src="https://github.com/user-attachments/assets/b2d7649e-2986-4fb7-a06c-1cb64cd621b9" />
-
 
 
 <img width="804" height="229" alt="image" src="https://github.com/user-attachments/assets/da502103-1f9d-470e-9483-143c07173025" />
