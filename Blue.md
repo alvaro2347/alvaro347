@@ -7,6 +7,6 @@ El escaneo revela que la máquina es vulnerable a ms17-010 el cual corresponde a
 <img width="955" height="598" alt="image" src="https://github.com/user-attachments/assets/b8a51ce4-78e6-4ced-b0f0-042c6c173a97" />
 
 Miro las opciones del exploit y veo que en este caso solo hace falta establecer la máquina objetivo, asique la añado y además establezco un payload para que al ejecutar el exploit me devuelva una reverse shell<br>
-<img width="727" height="645" alt="image" src="https://github.com/user-attachments/assets/8b8d4aee-999f-4e13-a4d8-19610831be3f" />
+<img width="727" height="645" alt="image" src="https://github.com/user-attachments/assets/8b8d4aee-999f-4e13-a4d8-19610831be3f" /><br>
 Tras ejecutar el exploit ya está establecida la reverse shell<br>
 <img width="1007" height="960" alt="image" src="https://github.com/user-attachments/assets/9726561e-9b87-4148-bb31-fbc71bc88bf3" />
