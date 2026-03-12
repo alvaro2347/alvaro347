@@ -11,3 +11,25 @@ Miro las opciones del exploit y veo que en este caso solo hace falta establecer 
 Tras ejecutar el exploit ya está establecida la reverse shell<br>
 <img width="1008" height="613" alt="image" src="https://github.com/user-attachments/assets/92dcfd2d-834e-4039-9c0a-d412690d2161" />
 
+Busco el modulo de meterpreter para escalar privilegios, lo ejecuto y se abre una nueva shell como meterpreter<br>
+<img width="872" height="618" alt="image" src="https://github.com/user-attachments/assets/7791a401-3f18-4822-a46c-89c341b24b3a" />
+
+Abro la shell y compruebo que soy un usuario privilegiado de Windows <br>
+<img width="522" height="188" alt="image" src="https://github.com/user-attachments/assets/c98dee0c-55a2-49db-b0f2-9ad6f032cc67" />
+
+<img width="253" height="292" alt="image" src="https://github.com/user-attachments/assets/11602bc1-8987-4c0c-8db4-46c7dd3d9f50" />
+
+<img width="704" height="135" alt="image" src="https://github.com/user-attachments/assets/b2d7649e-2986-4fb7-a06c-1cb64cd621b9" />
+
+
+
+<img width="804" height="229" alt="image" src="https://github.com/user-attachments/assets/da502103-1f9d-470e-9483-143c07173025" />
+
+Voy al directorio raiz y veo que ahí se ubica la primera flag<br>
+<img width="697" height="436" alt="image" src="https://github.com/user-attachments/assets/6bcc4635-4a27-4314-bbf9-9857944b4118" />
+
+La siguiente flag se ubica en el directorio donde se almacenan la contraseñas en Windows<br>
+<img width="414" height="61" alt="image" src="https://github.com/user-attachments/assets/aa5e051d-2cba-487d-8d73-6a9e5cca898e" />
+
+La ultima flag se encuentra en la carpeta de documentos del usuario Jon<br>
+<img width="558" height="252" alt="image" src="https://github.com/user-attachments/assets/8d70a2a3-3047-420d-8a44-6947b68727f3" />
