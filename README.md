@@ -17,7 +17,7 @@ Nmap, Wireshark, Burp Suite, Metasploitable, enum4linux, smbclient...
 Laboratorio utilizando la máquina vulnerable Metasploitable:
 > [Metasploitable](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Metasploitable.md)
 >  Máquinas Tryhackme
->> [BLUE]
+> [BLUE]
 
 ---
 
