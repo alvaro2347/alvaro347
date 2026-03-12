@@ -21,7 +21,7 @@ Busco los procesos que estan ejecutandose en la máquina<br>
 migro a un proceso que pertenezca al usuario nt authority\system para asegurar que el proceso tambien tenga privilegios, luego obtengo los hashes de las contraseñas de los usuarios de la máquina<br>
 <img width="704" height="135" alt="image" src="https://github.com/user-attachments/assets/b2d7649e-2986-4fb7-a06c-1cb64cd621b9" /><br>
 
-Guardo el hash del usuario John en un archivo y con la herramienta John the ripper obtengo la contraseña<br>
+Guardo el hash del usuario Jon en un archivo y con la herramienta John the ripper obtengo la contraseña<br>
 <img width="804" height="229" alt="image" src="https://github.com/user-attachments/assets/da502103-1f9d-470e-9483-143c07173025" />
 
 Voy al directorio raiz y veo que ahí se ubica la primera flag<br>
