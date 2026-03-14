@@ -8,7 +8,7 @@ Aquí voy recopilando mis proyectos y experimentos mientras sigo aprendiendo.
 
 Tengo experiencia con diversas herramientas y frameworks, las cuales utilizo en los proyectos incluidos en este repositorio, entre ellas:
 
-Nmap, gobuster, dirb, dirbuster, hydra, John the ripper, Wireshark, Burp Suite, Metasploitable, enum4linux, smbclient...
+Nmap, gobuster, dirb, dirbuster, hydra, John the ripper, Wireshark, BurpSuite, Metasploitable, enum4linux, smbclient...
 
 
 
