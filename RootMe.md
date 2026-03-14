@@ -21,11 +21,11 @@ Codifico en url el siguiente comando que se encargará de enviar una shell rever
 ejecuto desde el directorio uploads el archivo shell.phtml y ejecuto desde la url el comando codificado anteriormente
 <img width="1201" height="163" alt="Image" src="https://github.com/user-attachments/assets/18ef39ca-cd8d-46ed-9976-36912d7dc3d8" /><br>
 
-En el netcat que tenia a la escucga obtengo la shell como usuario www-data, asique busco archivos que tengan activado el bit SUID para aprovecharlos y escalar privilegios
+En el netcat que tenia a la escucga obtengo la shell como usuario www-data, asique busco archivos que tengan activado el bit SUID para aprovecharlos y escalar privilegios<br>
 <img width="730" height="627" alt="Image" src="https://github.com/user-attachments/assets/60cc0bd9-038c-464f-afd8-5428647e4dbf" />
 
 Veo que tiene el bit SUID activo en python, asique busco en GTFOBins y encuentro el siguiente comando, asique lo ejecuto y consigo escalar al usuario root<br>
 <img width="838" height="79" alt="Image" src="https://github.com/user-attachments/assets/30e83fd9-3f8b-49a1-b069-77350191522a" />
 
-Busco en el sistema las flags del usuario y de root y consigo obtener su contenido
+Busco en el sistema las flags del usuario y de root y consigo obtener su contenido<br>
 <img width="243" height="127" alt="Image" src="https://github.com/user-attachments/assets/563a4051-4b13-4372-87bf-7ca1f6e8772e" />
