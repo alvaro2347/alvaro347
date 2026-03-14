@@ -3,7 +3,7 @@
 Con un escaneo de nmap veo que tiene un servicio SSH en el puerto 22 y una web en el puerto 80
 <img width="767" height="369" alt="Image" src="https://github.com/user-attachments/assets/209c4cba-94ef-4b84-a392-c7ebee010ad5" />
 
-Utilizo la herramienta gobuster para buscar directorios ocultos en la web, encuentro los directorios, panel y uploads
+Utilizo la herramienta gobuster para buscar directorios ocultos en la web, encuentro los directorios panel y uploads
 <img width="811" height="690" alt="Image" src="https://github.com/user-attachments/assets/a1f36ecb-7c24-407d-b7f5-1a6b9c0e85a1" />
 
 creo un archivo llamado shell.php, el cual subiré a traves del directorio panel, este archivo contiene código que permitira ejecutar comandos de shell desde la url de la víctima escribiendo el nombre del archivo seguido de "?cmd=" y seguido del comando a ejecutar
