@@ -19,6 +19,7 @@ Laboratorio utilizando la máquina vulnerable Metasploitable:
 ###  Máquinas Tryhackme <br>
 > [BLUE](https://github.com/alvaro2347/alvaro347/blob/main/Blue.md) <br>
 >[RootMe](https://github.com/alvaro2347/alvaro347/blob/main/RootMe.md)<br>
+>[Simple CTF](https://github.com/alvaro2347/alvaro347/blob/main/Simple%20CTF.md)<br>
 ---
 
 Gracias por pasarte.
