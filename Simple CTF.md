@@ -5,7 +5,7 @@ Realizo un escaneo con nmap y veo que hay un FTP un servicio web y un SSH<br>
 
 Me conecto al FTP como usuario anónimo y veo un archivo que dice que la contraseña del usuario es debil, pero no hay mas información que esa<br><img width="1324" height="683" alt="Image" src="https://github.com/user-attachments/assets/fd1eefcc-2542-4f5a-bd90-9d32ff93316a" />
 
-Busco directorios ocultos y encuentro uno lamado simple
+Busco directorios ocultos y encuentro uno llamado simple
 <img width="804" height="662" alt="Image" src="https://github.com/user-attachments/assets/c0647ac8-947d-45e6-bc67-500f5a0f92f3" />
 
 Uso whatweb para ver que tecnologías utiliza la web y veo que usa CMS-made-simple[2.2.8]<br>
