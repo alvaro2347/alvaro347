@@ -18,13 +18,14 @@ Abro el archivo con Wireshark y sobre una conexión que parece importante realiz
 <img width="1250" height="757" alt="image" src="https://github.com/user-attachments/assets/653952f0-20c5-47d0-ba78-6d02aabb3c15" /><br>
 Encuentro un archivo con la receta que se solicitaba, la cual es "love"<br>
 <img width="1094" height="172" alt="image" src="https://github.com/user-attachments/assets/11051222-949d-4db0-9ff5-e799e14656ae" /><br>
+Pruebo a iniciar sesión como lennie con la contraseña descubierta anteriormente y consigo acceder<br>
+<img width="327" height="137" alt="image" src="https://github.com/user-attachments/assets/2bbfe724-89f2-4450-9c1f-a2686416757e" /><br>
+Voy a la carpeta de lennie y veo la flag de usuario<br>
+<img width="305" height="115" alt="image" src="https://github.com/user-attachments/assets/eb5afdf6-4ad2-490e-8599-627b6c4da2ee" /><br>
+Veo que hay un script en el directorio, el cual ejecuta otro script ubicado en /etc <br>
+<img width="473" height="137" alt="image" src="https://github.com/user-attachments/assets/1a03815d-8257-4ba8-811a-5512ad101a1f" /><br>
+modifico el script de /etc para que ejecute una reverse shell <br>
+<img width="436" height="96" alt="image" src="https://github.com/user-attachments/assets/711003be-79d1-4921-b92e-38c59a366e6d" /><br>
 
-<img width="327" height="137" alt="image" src="https://github.com/user-attachments/assets/2bbfe724-89f2-4450-9c1f-a2686416757e" />
-
-<img width="305" height="115" alt="image" src="https://github.com/user-attachments/assets/eb5afdf6-4ad2-490e-8599-627b6c4da2ee" />
-
-<img width="436" height="96" alt="image" src="https://github.com/user-attachments/assets/711003be-79d1-4921-b92e-38c59a366e6d" />
-
-<img width="473" height="137" alt="image" src="https://github.com/user-attachments/assets/1a03815d-8257-4ba8-811a-5512ad101a1f" />
-
+pongo mi máquina a la escucha con netcat y al ejecutarse el script, recibo una shell como root, ya que este script se ejecuta con privilegios de root, finalmente encuentro la flag de root<br>
 <img width="637" height="302" alt="image" src="https://github.com/user-attachments/assets/3dfbee03-a47b-4d73-bd0e-f7c954419ed2" />
