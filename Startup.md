@@ -1,6 +1,6 @@
 # Startup
 
-Realizo un escaneo con nmap sobre la máquina<br>
+Realizo un escaneo con nmap sobre la máquina y descubro un FTP, un SSH y una web<br>
 <img width="762" height="627" alt="image" src="https://github.com/user-attachments/assets/04c4a867-97a7-497a-b1a1-b4a5aa81f7b5" /><br>
 Como en el resultado de nmap veo que el usuario anónimo en FTP está habilitado accedo, veo dos archivos, los cuales me deja descargar
 <img width="597" height="482" alt="image" src="https://github.com/user-attachments/assets/42a66dca-e196-47d0-bc7e-796ee817fcb3" /><br>
