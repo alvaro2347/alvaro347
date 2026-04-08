@@ -7,17 +7,17 @@ Como en el resultado de nmap veo que el usuario anónimo en FTP está habilitado
 uno de los archivos contiene un texto poco relevante pero que contiene un nombre, el cual podria ser un nombre de usuario, el otro archivo es una imagen relacionada con el texto, pero no voy a realizar esteganografia ya que no parece relevante<br>
 <img width="1256" height="75" alt="image" src="https://github.com/user-attachments/assets/c33c444e-bb39-4502-8e09-ec4bb86ce8d9" /><br>
 Busco posibles directorios ocultos en la página web con dirb, solo encuentro la misma dirección donde se ubicaba el usuario anónimo al hacer login por FTP<br>
-<img width="657" height="413" alt="image" src="https://github.com/user-attachments/assets/b5be2961-5173-4d84-bc7e-94edbf8558c2" /><br>
+<img width="545" height="459" alt="image" src="https://github.com/user-attachments/assets/4019f10d-6f4a-4828-bb04-1f934bd1e66e" /><br>
 como veo que se puede acceder por web, subo a la carpeta FTP una shell reversa para ejecutarla desde la web<br>
 <img width="378" height="358" alt="image" src="https://github.com/user-attachments/assets/76dd2eda-eb72-46a6-83a4-264f60adbf71" /><br>
 Tras ejecutar la shell reversa obtengo la shell en mi máquina<br>
 <img width="716" height="500" alt="image" src="https://github.com/user-attachments/assets/ffd60d43-28c8-455e-937b-6781cc4702da" /><br>
-
-<img width="660" height="78" alt="image" src="https://github.com/user-attachments/assets/e08b8209-f677-490d-988c-5843fdf9a8fa" />
-
-<img width="1250" height="757" alt="image" src="https://github.com/user-attachments/assets/653952f0-20c5-47d0-ba78-6d02aabb3c15" />
-
-<img width="1094" height="172" alt="image" src="https://github.com/user-attachments/assets/11051222-949d-4db0-9ff5-e799e14656ae" />
+Tras buscar posibles archivos importantes en el equipo, en la carpeta incidents encuentro un archivo pcapng, asique lo envio a mi máquina para analizarlo<br>
+<img width="660" height="78" alt="image" src="https://github.com/user-attachments/assets/e08b8209-f677-490d-988c-5843fdf9a8fa" /><br>
+Abro el archivo con Wireshark y sobre una conexión que parece importante realizo un follow TCP stream, tras buscar un poco encuentro que se han intentado listar permisos de sudo con la contraseña que aparece en la imagen, asique apunto esa contraseña<br>
+<img width="1250" height="757" alt="image" src="https://github.com/user-attachments/assets/653952f0-20c5-47d0-ba78-6d02aabb3c15" /><br>
+Encuentro un archivo con la receta que se solicitaba, la cual es "love"<br>
+<img width="1094" height="172" alt="image" src="https://github.com/user-attachments/assets/11051222-949d-4db0-9ff5-e799e14656ae" /><br>
 
 <img width="327" height="137" alt="image" src="https://github.com/user-attachments/assets/2bbfe724-89f2-4450-9c1f-a2686416757e" />
 
