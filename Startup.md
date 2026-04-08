@@ -27,7 +27,7 @@ Voy a la carpeta de lennie y veo la flag de usuario<br>
 <img width="305" height="115" alt="image" src="https://github.com/user-attachments/assets/eb5afdf6-4ad2-490e-8599-627b6c4da2ee" /><br>
 Veo que en la carpeta scripts dentro del directorio de lennie hay un script, el cual ejecuta otro script ubicado en /etc , además exporta la variable $LIST al archivo startup_list.txt <br>
 <img width="473" height="137" alt="image" src="https://github.com/user-attachments/assets/1a03815d-8257-4ba8-811a-5512ad101a1f" /><br>
-Haciendo ls -la , veo que el archivo startup_list.txt se actualiza cada minuto, asique el script que lo modifica debe de estar ejecutandose de manera automática probablemente con permisos elevados, por lo que modifico el script de /etc para que ejecute una reverse shell, de esta manera cuando se ejecute el script ubicado en /home/lennie ejecutará también este y obtendré la shell <br>
+Haciendo ls -la , veo que el archivo startup_list.txt se actualiza cada minuto, asique el script que lo modifica debe de estar ejecutandose de manera automática probablemente con permisos elevados, por lo que modifico el script de /etc para que ejecute una reverse shell, de esta manera cuando se ejecute el script ubicado en /home/lennie/scripts ejecutará también este y obtendré la shell <br>
 <img width="436" height="96" alt="image" src="https://github.com/user-attachments/assets/711003be-79d1-4921-b92e-38c59a366e6d" /><br>
 
 pongo mi máquina a la escucha con netcat y al ejecutarse el script, recibo una shell como root, ya que efectivamente este script se ejecuta con privilegios de root, en el directorio de root encuentro la flag de root<br>
