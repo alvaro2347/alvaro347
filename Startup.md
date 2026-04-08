@@ -1,16 +1,17 @@
 # Startup
 
-<img width="762" height="627" alt="image" src="https://github.com/user-attachments/assets/04c4a867-97a7-497a-b1a1-b4a5aa81f7b5" />
-
-<img width="597" height="482" alt="image" src="https://github.com/user-attachments/assets/42a66dca-e196-47d0-bc7e-796ee817fcb3" />
-
-<img width="1256" height="75" alt="image" src="https://github.com/user-attachments/assets/c33c444e-bb39-4502-8e09-ec4bb86ce8d9" />
-
-<img width="657" height="413" alt="image" src="https://github.com/user-attachments/assets/b5be2961-5173-4d84-bc7e-94edbf8558c2" />
-
-<img width="378" height="358" alt="image" src="https://github.com/user-attachments/assets/76dd2eda-eb72-46a6-83a4-264f60adbf71" />
-
-<img width="716" height="500" alt="image" src="https://github.com/user-attachments/assets/ffd60d43-28c8-455e-937b-6781cc4702da" />
+Realizo un escaneo con nmap sobre la máquina<br>
+<img width="762" height="627" alt="image" src="https://github.com/user-attachments/assets/04c4a867-97a7-497a-b1a1-b4a5aa81f7b5" /><br>
+Como en el resultado de nmap veo que el usuario anónimo en FTP está habilitado accedo, veo dos archivos, los cuales me deja descargar
+<img width="597" height="482" alt="image" src="https://github.com/user-attachments/assets/42a66dca-e196-47d0-bc7e-796ee817fcb3" /><br>
+uno de los archivos contiene un texto poco relevante pero que contiene un nombre, el cual podria ser un nombre de usuario, el otro archivo es una imagen relacionada con el texto, pero no voy a realizar esteganografia ya que no parece relevante<br>
+<img width="1256" height="75" alt="image" src="https://github.com/user-attachments/assets/c33c444e-bb39-4502-8e09-ec4bb86ce8d9" /><br>
+Busco posibles directorios ocultos en la página web con dirb, solo encuentro la misma dirección donde se ubicaba el usuario anónimo al hacer login por FTP<br>
+<img width="657" height="413" alt="image" src="https://github.com/user-attachments/assets/b5be2961-5173-4d84-bc7e-94edbf8558c2" /><br>
+como veo que se puede acceder por web, subo a la carpeta FTP una shell reversa para ejecutarla desde la web<br>
+<img width="378" height="358" alt="image" src="https://github.com/user-attachments/assets/76dd2eda-eb72-46a6-83a4-264f60adbf71" /><br>
+Tras ejecutar la shell reversa obtengo la shell en mi máquina<br>
+<img width="716" height="500" alt="image" src="https://github.com/user-attachments/assets/ffd60d43-28c8-455e-937b-6781cc4702da" /><br>
 
 <img width="660" height="78" alt="image" src="https://github.com/user-attachments/assets/e08b8209-f677-490d-988c-5843fdf9a8fa" />
 
