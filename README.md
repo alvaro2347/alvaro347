@@ -20,6 +20,7 @@ Laboratorio utilizando la máquina vulnerable Metasploitable:
 >[RootMe](https://github.com/alvaro2347/alvaro347/blob/main/RootMe.md)<br>
 >[Simple CTF](https://github.com/alvaro2347/alvaro347/blob/main/Simple%20CTF.md)<br>
 >[Startup](https://github.com/alvaro2347/alvaro347/blob/main/Startup.md)<br>
+>[Blog](https://github.com/alvaro2347/alvaro347/blob/main/Blog.md)<br>
 ---
 
 Gracias por pasarte.
