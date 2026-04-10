@@ -7,10 +7,9 @@ Utilizando whatweb veo que la página está desarrollada usando Wordpress, asiqu
 <img width="1698" height="71" alt="image" src="https://github.com/user-attachments/assets/d9e7e459-1806-460d-80a2-3ef2241e1f7e" /><br>
 
 Con gobuster veo que en la dirección wp-admin tiene una página de login<br>
-<img width="706" height="651" alt="image" src="https://github.com/user-attachments/assets/d7145f68-3969-4d57-b576-ef4bd817abae" /><br>
-
+<img width="707" height="670" alt="image" src="https://github.com/user-attachments/assets/b14f856c-8b6d-4b51-8af7-63d728264eaa" /><br>
 Para acceder a wp-admin, es necesario utilizar el dominio blog.thm en lugar de la dirección IP. Por este motivo, en /etc/hosts añado una entrada que asocia la IP de la máquina victima con blog.thm, de modo que el sistema pueda resolver correctamente el nombre de dominio<br>
-<img width="440" height="124" alt="image" src="https://github.com/user-attachments/assets/7c927f7e-affe-4f51-b903-9746ff79e332" /><br>
+<img width="427" height="122" alt="image" src="https://github.com/user-attachments/assets/1b1333d8-765c-4442-acba-9e0f5fd7d47d" /><br>
 
 utilizo wpscan para escanear la web y enumerar usuarios y plugin vulnerables<br>
 <img width="511" height="722" alt="image" src="https://github.com/user-attachments/assets/b85c36fb-30f2-4fef-ab29-0ac7fabaa52a" /><br>
