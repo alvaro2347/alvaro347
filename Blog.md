@@ -30,7 +30,7 @@ Como sabemos la versión de wordpress y tenemos credenciales de usuario, realizo
 Busco archivos que tengan el bit SUID activo y veo un programa llamado checker dentro de /sbin <br>
 <img width="465" height="404" alt="image" src="https://github.com/user-attachments/assets/5e9ba725-8ac3-4f75-9aef-1448a5993b2c" /><br>
 
-Uso ltrace para ver que funciones realiza el programa checker, este intenta leer la variable de entorno admin y como no existe termina el programa, asique defino la variable admin y al volver a ejecutar checker como ya existe dicha variable, ahora si me da acceso como root<br>
+Uso ltrace para ver que funciones realiza el programa checker, este intenta leer la variable de entorno admin y como no existe termina el programa, asique defino la variable admin y al volver a ejecutar checker, como ya existe dicha variable, ahora si me da acceso como root<br>
 <img width="451" height="181" alt="image" src="https://github.com/user-attachments/assets/26073ae9-c16f-495a-9422-c0f15ca87909" /><br>
 
 finalmente, siendo root, veo la flag del usuario bjoel en su directorio, pero esta resulta ser falsa, asique la busco en el sistema y veo que la verdadera se encuentra en /media/usb y la flag de root se ubica en el directorio de root<br>
