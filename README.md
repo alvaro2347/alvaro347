@@ -8,7 +8,7 @@ Aquí voy recopilando mis proyectos y experimentos mientras sigo aprendiendo.
 
 Tengo experiencia con diversas herramientas y frameworks, las cuales utilizo en los proyectos incluidos en este repositorio, entre ellas:
 
-Nmap, gobuster, dirb, dirbuster, hydra, John the ripper, GTFOBins, Wireshark, BurpSuite, Metasploitable, enum4linux, whatweb, wpscan, smbclient y varias otras herramientas y frameworks
+Nmap, gobuster, dirb, dirbuster, hydra, John the ripper, GTFOBins, Wireshark, BurpSuite, Metasploitable, enum4linux, whatweb, wpscan, smbclient, smbmap, rpcclient y varias otras herramientas y frameworks
 
 
 ## 🧩 Laboratorios de pentesting y CTFs
