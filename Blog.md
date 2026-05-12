@@ -1,6 +1,6 @@
 # Blog
 
-Realizo un escaneo con nmap sobre la máquina ejecutando scripts por defecto y realizando detección de versiones de servicios, encuentro un SSH, una web apache y un servicio Samba<br>
+Realizo un escaneo con nmap sobre la máquina, ejecutando scripts por defecto y realizando detección de versiones de servicios, encuentro un SSH, una web apache y un servicio Samba<br>
 <img width="757" height="727" alt="image" src="https://github.com/user-attachments/assets/a4a98dd3-a5a0-4832-85e2-4af4c0bd830c" /><br>
 
 Utilizando whatweb veo que la página está desarrollada usando Wordpress, asique utilizaré wpscan para analizar la web<br>
