@@ -14,7 +14,7 @@ Ya que indica que son usuarios, se intenta realizar conexión por SSH con las cr
 <img width="555" height="336" alt="image" src="https://github.com/user-attachments/assets/67513884-02f0-461a-b801-877916b81c72" /><br>
 Utilizando steghide se intenta extraer algún archivo oculto que pueda tener la imagen, pero parece estar encriptada, con stegseek se realiza fuerza bruta obteniendo así la contraseña requerida para desencriptarla<br>
 <img width="496" height="114" alt="image" src="https://github.com/user-attachments/assets/98f6eb05-97ae-454b-9ce5-a4c548acfba8" /><br>
-Utilizando steghide con la contraseña obtenida, se consigue extraer un arcivo comprimido<br>
+Utilizando steghide con la contraseña obtenida, se consigue extraer un archivo comprimido<br>
 <img width="335" height="75" alt="image" src="https://github.com/user-attachments/assets/9549c5a3-a36c-45e4-a92e-8f53b9cf6d74" /><br>
 El archivo obtenido también requiere de contraseña para descomprimirse, asique utilizando la herramienta john the ripper, se obtiene un hash que pueda ser tratado por john y tras tratarlo, se obtiene la contraseña <br>
 <img width="1099" height="231" alt="image" src="https://github.com/user-attachments/assets/194445fd-490e-4d94-835f-84c0b42b6da9" /><br>
