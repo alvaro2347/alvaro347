@@ -1,6 +1,6 @@
 # Startup
 
-Se realiza un escaneo con nmap sobre la máquina y descubriendo así servicios FTP, SSH y una web<br>
+Se realiza un escaneo con nmap sobre la máquina, descubriendo así servicios FTP, SSH y una web<br>
 <img width="762" height="627" alt="image" src="https://github.com/user-attachments/assets/04c4a867-97a7-497a-b1a1-b4a5aa81f7b5" /><br>
 Como en el resultado de nmap se ve que el usuario anónimo en FTP está habilitado, se accede, se pueden ver dos archivos, los cuales se procede a descargar<br>
 <img width="597" height="482" alt="image" src="https://github.com/user-attachments/assets/42a66dca-e196-47d0-bc7e-796ee817fcb3" /><br>
