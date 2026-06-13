@@ -1,6 +1,6 @@
 # Simple CTF
 
-Se realiza un escaneo con nmap descubriendo así que hay servicios FTP, web y SSH expuestos en la máquina<br>
+Se realiza un escaneo con nmap, descubriendo así que hay servicios FTP, web y SSH expuestos en la máquina<br>
 <img width="770" height="581" alt="Image" src="https://github.com/user-attachments/assets/b303cc72-9867-4faa-abe8-6723182fe34a" />
 
 Se realiza una conexión al FTP como usuario anónimo y se encuentra un archivo que dice que la contraseña del usuario es debil, pero no hay mas información que esa, por lo que se deja el FTP, al menos de momento, para pasar a relizar la explotación por otros medios<br><img width="1324" height="683" alt="Image" src="https://github.com/user-attachments/assets/fd1eefcc-2542-4f5a-bd90-9d32ff93316a" />
