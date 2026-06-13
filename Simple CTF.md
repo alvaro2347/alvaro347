@@ -11,13 +11,13 @@ Se buscan directorios ocultos y se encuentra uno llamado simple
 Se utiliza la herramienta whatweb para ver que tecnologías utiliza la web descubriendo así que utiliza CMS-made-simple[2.2.8]<br>
 <img width="2335" height="68" alt="Image" src="https://github.com/user-attachments/assets/ede43947-5b7d-40f3-af2b-26aeb995fe94" />
 
-Se encuentra esta vulnerabilidad para esa versión del CMS, asique se descarga el exploit correspondiente<br>
+Se encuentra la vulnerabilidad CVE-2019-9053 para esa versión del CMS, asique se descarga el exploit correspondiente<br>
 <img width="1643" height="286" alt="Image" src="https://github.com/user-attachments/assets/57cec972-724f-4e64-92f7-f9927433f7aa" />
 
-Se ejecuta el exploit encontrando así un usuario y una contraseña, aunque la contraseña no parece ser correcta<br>
+Se ejecuta el exploit, encontrando así un usuario y una contraseña, aunque la contraseña no parece ser correcta<br>
 <img width="456" height="79" alt="Image" src="https://github.com/user-attachments/assets/89cde357-ef0e-4841-bc19-3303d403903a" />
 
-Se utiliza hydra para realizar fuerza bruta sobre el SSH, aprovechando el usuario encontrado anteriormente y la wordlist rockyou, con esto se descubre la contraseña correspondiente al usuario<br>
+Se utiliza hydra para realizar fuerza bruta sobre el SSH, aprovechando el usuario encontrado anteriormente y la wordlist rockyou, con esto se descubre la contraseña que corresponde al usuario<br>
 <img width="730" height="255" alt="Image" src="https://github.com/user-attachments/assets/1af21f27-268f-4ba3-9e80-1d76099790c4" />
 
 Se realiza una conexión al SSH con las credenciales obtenidas descubriendo así la primera flag<br>
