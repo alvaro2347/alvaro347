@@ -6,7 +6,7 @@ Con un escaneo de nmap se descubre que la máquina objetivo tiene un servicio SS
 Se utiliza la herramienta gobuster para buscar directorios ocultos en la web, encontrando así los directorios panel y uploads
 <img width="811" height="690" alt="Image" src="https://github.com/user-attachments/assets/a1f36ecb-7c24-407d-b7f5-1a6b9c0e85a1" />
 
-Se crea un archivo llamado shell.php, el cual se subirá a traves del directorio panel, este archivo contiene código que permitira ejecutar comandos de shell desde la url de la víctima escribiendo el nombre del archivo seguido de "?cmd=" y seguido del comando a ejecutar
+Se crea un archivo llamado shell.php, el cual se subirá a traves del directorio panel, este archivo contiene código que permitira ejecutar comandos de shell desde la url de la víctima, escribiendo el nombre del archivo seguido de "?cmd=" y seguido del comando a ejecutar
 <img width="516" height="32" alt="Image" src="https://github.com/user-attachments/assets/42255b3f-6ec2-47d5-92e0-0e9866c26639" />
 
 Tras intentar subir el archivo se observa que la web no permite la subida de archivos php, asique con BurpSuite se intercepta la petición que realiza la web al intentar subir el archivo y se envia al intruder para intentar subirlo probando diferentes tipos de archivo
