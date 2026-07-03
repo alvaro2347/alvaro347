@@ -6,7 +6,7 @@ Se realiza un escaneo con nmap a la máquina, intentando detectar versiones de l
 El escaneo revela que la máquina es vulnerable a ms17-010 el cual corresponde a la conocida vulnerabilidad de smb eternalblue asique desde metasploit se busca un módulo para explotar la vulnerabilidad, en este caso se va a utilizar el siguiente: "exploit/windows/smb/ms17_010_eternalblue" <br>
 <img width="955" height="598" alt="image" src="https://github.com/user-attachments/assets/b8a51ce4-78e6-4ced-b0f0-042c6c173a97" />
 
-Tras mirar las opciones del exploit y se ve que en este caso solo hace falta establecer la máquina objetivo y la atacante, asique se añade y además se establece un payload para que al ejecutar el exploit este devuelva una reverse shell<br>
+Tras mirar las opciones del exploit se ve que en este caso solo hace falta establecer la máquina objetivo y la atacante, asique se añade y además se establece un payload para que al ejecutar el exploit este devuelva una reverse shell<br>
 <img width="727" height="645" alt="image" src="https://github.com/user-attachments/assets/8b8d4aee-999f-4e13-a4d8-19610831be3f" /><br>
 Tras ejecutar el exploit ya está establecida la reverse shell<br>
 <img width="1008" height="613" alt="image" src="https://github.com/user-attachments/assets/92dcfd2d-834e-4039-9c0a-d412690d2161" />
@@ -14,7 +14,7 @@ Tras ejecutar el exploit ya está establecida la reverse shell<br>
 Se busca el modulo de meterpreter para escalar privilegios, tras ejecutarlo se abre una nueva shell como meterpreter<br>
 <img width="872" height="618" alt="image" src="https://github.com/user-attachments/assets/7791a401-3f18-4822-a46c-89c341b24b3a" />
 
-Se abre la shell comprobandoi así que se ha logrado acceso como usuario privilegiado de Windows <br>
+Se abre la shell comprobando así que se ha logrado acceso como usuario privilegiado de Windows <br>
 <img width="522" height="188" alt="image" src="https://github.com/user-attachments/assets/c98dee0c-55a2-49db-b0f2-9ad6f032cc67" /><br>
 Se buscan los procesos que estan ejecutandose en la máquina<br>
 <img width="253" height="292" alt="image" src="https://github.com/user-attachments/assets/11602bc1-8987-4c0c-8db4-46c7dd3d9f50" /><br>
@@ -24,10 +24,10 @@ Se migra a un proceso que pertenezca al usuario nt authority\system para asegura
 Se guarda el hash del usuario Jon en un archivo y con la herramienta John the ripper se obtiene la contraseña<br>
 <img width="804" height="229" alt="image" src="https://github.com/user-attachments/assets/da502103-1f9d-470e-9483-143c07173025" />
 
-Acediendo al directorio raiz se observa que ahí se ubica la primera flag<br>
+Accediendo al directorio raiz se observa que ahí se ubica la primera flag<br>
 <img width="697" height="436" alt="image" src="https://github.com/user-attachments/assets/6bcc4635-4a27-4314-bbf9-9857944b4118" />
 
-La siguiente flag se ubica en el directorio donde se almacenan la contraseñas en Windows<br>
+La siguiente flag se ubica en el directorio donde se almacenan las contraseñas en Windows<br>
 <img width="414" height="61" alt="image" src="https://github.com/user-attachments/assets/aa5e051d-2cba-487d-8d73-6a9e5cca898e" />
 
 La ultima flag se encuentra en la carpeta de documentos del usuario Jon<br>
