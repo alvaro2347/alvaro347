@@ -1,6 +1,6 @@
 # Blue
 
-Se realiza un escaneo con nmap a la máquina, intentando detectar versiones de los servicios y ejecutando scripts por defecto asi como scripts para detectar vulnerabilidades, luego se guarda el resultado en un archivo <br>
+Se realiza un escaneo con nmap a la máquina, intentando detectar versiones de los servicios y ejecutando scripts por defecto asi como scripts para detectar vulnerabilidades <br>
 <img width="1079" height="1002" alt="image" src="https://github.com/user-attachments/assets/38c1d619-f960-4c07-8a01-9762ed58195f" />
 
 El escaneo revela que la máquina es vulnerable a ms17-010 el cual corresponde a la conocida vulnerabilidad de smb eternalblue asique desde metasploit se busca un módulo para explotar la vulnerabilidad, en este caso se va a utilizar el siguiente: "exploit/windows/smb/ms17_010_eternalblue" <br>
