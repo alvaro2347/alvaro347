@@ -18,7 +18,7 @@ La infraestructura propuesta incorpora un firewall perimetral, segmentación de 
 ## Tecnologías utilizadas
 
 * VirtualBox
-* pfSense
+* pfSense (Firewall)
 * Suricata (IDS/IPS)
 * Wazuh (SIEM)
 * Máquinas virtuales Linux y Windows
