@@ -25,7 +25,9 @@ Laboratorio utilizando la máquina vulnerable Metasploitable:
 ---
 ###  Máquinas Dockerlabs <br>
 >[Domain](https://github.com/alvaro2347/alvaro347/blob/main/Domain.md)<br>
->[Mirame](https://github.com/alvaro2347/alvaro347/blob/main/Mirame.md)
-
+>[Mirame](https://github.com/alvaro2347/alvaro347/blob/main/Mirame.md)<br>
+---
+### Laboratorio de ciberseguridad defensiva
+>[Implementación de un laboratorio de ciberseguridad defensiva para una pequeña empresa](https://github.com/alvaro2347/alvaro347/blob/main/Implementaci%C3%B3n%20de%20un%20laboratorio%20de%20ciberseguridad%20defensiva.md)
 
 Gracias por pasarte.
