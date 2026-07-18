@@ -11,7 +11,7 @@ Tengo experiencia con diversas herramientas y frameworks, las cuales utilizo en 
 Nmap, gobuster, dirb, dirbuster, hydra, John the ripper, GTFOBins, Wireshark, BurpSuite, Metasploitable, enum4linux, whatweb, wpscan, smbclient, smbmap, rpcclient, sqlmap y varias otras herramientas y frameworks
 
 
-## 🧩 Laboratorios de pentesting y CTFs
+## 🧩 Laboratorios de ciberseguridad y CTFs
 
 Laboratorio utilizando la máquina vulnerable Metasploitable:
 > [Metasploitable](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Metasploitable.md) <br>
