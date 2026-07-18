@@ -40,4 +40,4 @@ La red interna se divide en tres segmentos:
 * **Red de empleados:** utilizada por los equipos de trabajo habituales.
 * **Red de invitados:** diseñada para accesos temporales con permisos limitados y aislamiento del resto de la infraestructura.
 
-Este laboratorio reproduce un escenario realista, en el que se aplican medidas de seguridad sobre la infraestructura de una empresa y gracias a la realización de ataques simulados permite evaluar su eficacia frente a ciberataques reales.
+Este laboratorio reproduce un escenario realista en el que se implementan medidas de seguridad sobre la infraestructura de una empresa y permite, mediante la realización de ataques simulados, evaluar su eficacia frente a ciberataques reales.
