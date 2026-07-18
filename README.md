@@ -28,7 +28,7 @@ Laboratorio utilizando la máquina vulnerable Metasploitable:
 >[Mirame](https://github.com/alvaro2347/alvaro347/blob/main/Mirame.md)<br>
 ---
 ### Laboratorio de ciberseguridad defensiva
-Laboratorio en el que implemento diferentes medidas de seguridad(Firewall, SIEM, IDS/IPS) sobre la infraestructura de una pequeña empresa y realizo pruebas mediante ataques simulados
+Laboratorio en el que implemento diferentes medidas de seguridad(Firewall, SIEM, IDS/IPS) sobre la infraestructura de una pequeña empresa y evaluo su eficacia mediante la realización de ataques simulados
 >[Implementación de un laboratorio de ciberseguridad defensiva](https://github.com/alvaro2347/alvaro347/blob/main/Implementaci%C3%B3n%20de%20un%20laboratorio%20de%20ciberseguridad%20defensiva.md)
 
 Gracias por pasarte.
