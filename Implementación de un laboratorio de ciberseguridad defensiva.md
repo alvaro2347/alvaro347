@@ -56,6 +56,48 @@ Con el objetivo de reforzar la seguridad perimetral, se ha implementado una regl
 Para facilitar la administración y asegurar la conectividad inicial, se mantienen de forma provisional las reglas que pfSense aplica por defecto en la interfaz LAN. Estas políticas permiten tanto el acceso a la gestión del firewall desde la red interna como la salida de tráfico hacia el exterior (WAN) y la comunicación entre dispositivos. No obstante, esta configuración se ajustará durante la fase de segmentación de la red; en ese punto, se implementarán reglas de filtrado más estrictas para cada segmento (Administración, Empleados e Invitados) con el objetivo de limitar el tráfico no esencial y prevenir el movimiento lateral de posibles amenazas.<br>
 <img width="592" height="127" alt="image" src="https://github.com/user-attachments/assets/d66ad7a5-39cf-40c7-87f6-8b69984282eb" /><br>
 
+El siguiente paso en el despliegue de la infraestructura es la segmentación de la red interna para limitar el movimiento lateral y mejorar la seguridad global del sistema. Para ello, se procede a la creación de diversas VLANs vinculadas a la interfaz LAN principal, definiendo segmentos específicos para Administración, Empleados e Invitados.
+La configuración se realiza a través del apartado de VLANs dentro del menú de interfaces de pfSense. Como acción inicial, se ha definido la VLAN con el tag 10 para identificar el segmento de Administración, el cual está destinado a albergar los equipos críticos y servidores con mayores restricciones de acceso. Este proceso permite estructurar la red según el nivel de confianza de cada grupo, facilitando la aplicación de políticas de filtrado personalizadas en fases posteriores.<br>
+<img width="595" height="190" alt="image" src="https://github.com/user-attachments/assets/81011405-3f78-4e9a-838e-3e0c537f7f36" /><br>
+
+Asimismo, se han habilitado las VLAN 20 para el segmento de Empleados y la VLAN 30 para la red de Invitados.<br>
+<img width="599" height="159" alt="image" src="https://github.com/user-attachments/assets/24d1438c-462b-4881-a17c-3b653bdabef6" /><br>
+(NOTA: Debido a que no se dispone actualmente de un switch físico para gestionar las VLAN, la segmentación se ha implementado mediante la creación de tres interfaces de red independientes que simulan las VLANs de Administración, Empleados e Invitados. En pfSense, estas interfaces se han activado con la misma nomenclatura, asegurando que la gestión, el comportamiento del tráfico y las políticas de seguridad sean idénticos a los de una arquitectura de red segmentada convencional.)<br>
+
+Para automatizar la gestión de red en la infraestructura segmentada, se ha procedido a habilitar el servicio DHCP en pfSense para cada segmento definido: Administración, Empleados e Invitados. En el segmento de Administración, destinado a equipos críticos, se ha establecido un rango de direcciones entre 192.168.10.10 y 192.168.10.100, mientras que para Empleados e Invitados se han configurado los rangos 192.168.20.10-100 y 192.168.30.10-100, respectivamente. La configuración se completa asignando la IP de pfSense de cada interfaz como gateway y DNS primario, junto con el DNS de Google como secundario, garantizando así el control del tráfico y la correcta resolución de nombres en cada nivel de confianza de la red.<br>
+<img width="600" height="638" alt="image" src="https://github.com/user-attachments/assets/eeba998a-2a0b-4fc1-a22c-02d6fcd2c5fa" /><br>
+
+Tras eliminar las políticas por defecto de pfSense para aplicar un control de tráfico más granular y adaptado al laboratorio, se ha procedido a configurar las reglas de firewall para el segmento de Administración,. Dado que este segmento alberga los equipos críticos de la infraestructura, se le ha otorgado una visibilidad completa sobre el resto de la red.
+Para ello, se han implementado tres reglas que permiten el acceso desde Administración hacia cualquier destino, incluyendo la WAN, la propia interfaz de gestión de pfSense y el tráfico interno del segmento,. Aunque se ha habilitado una regla general de acceso total, se han añadido dos reglas específicas y redundantes para permitir el tráfico hacia las VLAN de Empleados e Invitados,. Esta configuración tiene como objetivo mejorar la claridad en la monitorización de eventos y asegurar que el personal administrativo pueda gestionar y supervisar todos los niveles de confianza de la infraestructura de forma efectiva.<br>
+<img width="595" height="123" alt="image" src="https://github.com/user-attachments/assets/7ef757de-b16f-46b9-9188-d0fd3bbf3ca0" /><br>
+
+En el segmento de empleados, se han establecido políticas que deniegan explícitamente el acceso a la red de administración y a la interfaz de gestión de pfSense para evitar movimientos laterales hacia activos críticos. No obstante, se permite la comunicación dentro de su propia red, el acceso al segmento de invitados y la salida hacia la WAN, garantizando así la operatividad necesaria bajo un entorno controlado.<br>
+<img width="592" height="143" alt="image" src="https://github.com/user-attachments/assets/8b1f8e3b-8751-46b5-ae89-6492cc2c8d0c" /><br>
+
+Para el segmento de invitados, se han configurado políticas de seguridad estrictas destinadas a garantizar su total aislamiento del resto de la infraestructura. Se han establecido reglas de bloqueo para impedir el acceso a las redes de administración y empleados, además de restringir la conexión con la interfaz de gestión de pfSense. Finalmente, se ha habilitado una regla de acceso general que permite exclusivamente la navegación hacia la WAN y la comunicación interna entre dispositivos del mismo segmento.<br>
+<img width="580" height="138" alt="image" src="https://github.com/user-attachments/assets/1a695ab3-a760-4df4-8358-f2b20645d073" /><br>
+
+Se ha bloqueado todo el tráfico entrante desde la WAN hacia la red interna a través de pfSense. Esta política impide conexiones externas no autorizadas, garantizando la seguridad de los segmentos de administración, empleados e invitados.<br>
+<img width="599" height="149" alt="image" src="https://github.com/user-attachments/assets/7f5a57db-5e4a-42b4-9cbc-c131008a29f3" /><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
