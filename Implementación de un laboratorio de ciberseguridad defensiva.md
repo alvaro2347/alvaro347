@@ -80,6 +80,16 @@ Para el segmento de invitados, se han configurado políticas de seguridad estric
 Se ha bloqueado todo el tráfico entrante desde la WAN hacia la red interna a través de pfSense. Esta política impide conexiones externas no autorizadas, garantizando la seguridad de los segmentos de administración, empleados e invitados.<br>
 <img width="599" height="149" alt="image" src="https://github.com/user-attachments/assets/7f5a57db-5e4a-42b4-9cbc-c131008a29f3" /><br>
 
+Se confirma que un equipo en la red de administración dispone de acceso completo tanto a los segmentos de empleados e invitados como a la interfaz de gestión de pfSense y la red externa. Esta conectividad total valida la jerarquía de seguridad establecida, permitiendo que los equipos críticos mantengan visibilidad y control sobre todos los niveles de confianza de la infraestructura.<br>
+<img width="599" height="657" alt="image" src="https://github.com/user-attachments/assets/97973e76-fff0-4ad7-9528-89f67662a49c" /><br>
+
+Se valida que un equipo en la red de empleados no tiene acceso al segmento de administración ni a la interfaz de pfSense, garantizando el aislamiento de los activos críticos y evitando el movimiento lateral. Simultáneamente, se confirma su conectividad con la red de invitados y la salida a la red externa, lo que verifica la correcta implementación de las reglas de filtrado y la segmentación de la infraestructura.<br>
+<img width="586" height="617" alt="image" src="https://github.com/user-attachments/assets/bdae5313-1e8c-4af0-acda-e05a6b685260" /><br>
+
+Se comprueba que un equipo en el segmento de invitados carece de acceso a las redes de administración y empleados, así como a la interfaz de gestión de pfSense, garantizando el aislamiento total de esta zona. No obstante, se valida su capacidad de conexión con la red externa o WAN, lo que confirma que las reglas de firewall aplicadas aseguran la navegación de usuarios temporales sin comprometer la seguridad de los activos internos críticos del laboratorio.<br>
+<img width="530" height="540" alt="image" src="https://github.com/user-attachments/assets/5329db91-9c12-4bfc-b477-042eab5488a0" /><br>
+
+
 
 
 
