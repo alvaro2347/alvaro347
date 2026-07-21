@@ -89,16 +89,32 @@ Se valida que un equipo en la red de empleados no tiene acceso al segmento de ad
 Se comprueba que un equipo en el segmento de invitados carece de acceso a las redes de administración y empleados, así como a la interfaz de gestión de pfSense, garantizando el aislamiento total de esta zona. No obstante, se valida su capacidad de conexión con la red externa o WAN, lo que confirma que las reglas de firewall aplicadas aseguran la navegación de usuarios temporales sin comprometer la seguridad de los activos internos críticos del laboratorio.<br>
 <img width="530" height="540" alt="image" src="https://github.com/user-attachments/assets/5329db91-9c12-4bfc-b477-042eab5488a0" /><br>
 
+Una vez finalizada la segmentación y configuración del firewall, se procede a desplegar el sistema IDS/IPS Suricata para dotar a la red de capacidades de detección de amenazas en tiempo real. La instalación se realiza directamente sobre el nodo de pfSense a través de su gestor de paquetes (Package Manager), consolidando así el control del tráfico y la inspección profunda en un único punto central de la infraestructura defensiva.<br>
+<img width="592" height="307" alt="image" src="https://github.com/user-attachments/assets/d40c2de5-3e7f-4534-a457-de6d9dc9b207" /><br>
+
+Se ha configurado Suricata en la interfaz WAN para iniciar la inspección del tráfico externo, habilitando específicamente el registro de tráfico HTTP para obtener una mayor visibilidad sobre la actividad web.
+En esta fase inicial, se ha mantenido desactivada la función de bloqueo automático de hosts, permitiendo que el sistema funcione exclusivamente como un IDS centrado en la detección de posibles amenazas. Esta configuración permite monitorizar y validar las alertas generadas antes de realizar la transición al modo IPS, punto en el cual el sistema podrá mitigar ataques de forma activa bloqueando el tráfico malicioso.<br>
+<img width="592" height="620" alt="image" src="https://github.com/user-attachments/assets/a7b2d15d-769b-4cfc-8762-922a3e710f60" /><br>
+
+Se ha activado Suricata en todas las interfaces (WAN, administración, empleados e invitados) para monitorizar todo el tráfico del laboratorio. El próximo paso será definir las alertas personalizadas para cada segmento de red.<br>
+<img width="590" height="167" alt="image" src="https://github.com/user-attachments/assets/fc1b781c-f81b-4d4f-b242-1879d1842587" /><br>
 
 
+Se han definido las primeras alertas en la interfaz WAN de Suricata, orientadas a identificar actividades sospechosas dirigidas tanto al firewall pfSense como a la infraestructura interna, cumpliendo con el objetivo de detectar amenazas en tiempo real.
+Estas reglas permiten una monitorización detallada mediante los siguientes criterios:
+Protección del Firewall: Se han implementado alertas para detectar tráfico ICMP (ping) y accesos a la interfaz web de pfSense, lo cual es fundamental ya que es el único nodo expuesto directamente a la red externa.
+Detección de Reconocimiento: Mediante el uso de umbrales específicos (parámetro de 5 conexiones en 10 segundos), el sistema es capaz de identificar intentos de escaneo de puertos realizados con herramientas como nmap, alertando sobre fases de reconocimiento de posibles atacantes.
+Visibilidad de la Red Interna: A través de la variable $HOME_NET, se ha extendido la vigilancia para detectar pings o múltiples intentos de conexión hacia cualquiera de los segmentos internos (administración, empleados e invitados).
+Con esta configuración, el laboratorio cuenta ahora con la capacidad de registrar cualquier interacción no autorizada desde la WAN, proporcionando la visibilidad necesaria antes de realizar la transición al bloqueo activo de tráfico malicioso.<br>
+<img width="596" height="403" alt="image" src="https://github.com/user-attachments/assets/025f1d22-0ab3-4f67-aed4-9f4836c876c7" /><br>
 
 
+Se han configurado alertas en el segmento de empleados para detectar pings, accesos a la interfaz web de pfSense o ráfagas de más de cinco intentos de conexión hacia la red de administración. Estas reglas en Suricata permiten identificar movimientos laterales y tareas de reconocimiento hacia los activos críticos del laboratorio.<br>
+<img width="594" height="406" alt="image" src="https://github.com/user-attachments/assets/156e202b-fd00-4526-9e6e-ce37459e0131" /><br>
 
-
-
-
-
-
+Para la red de invitados, se han establecido alertas en Suricata que detectan pings o ráfagas de más de cinco intentos de conexión hacia los segmentos de administración y empleados, así como hacia el propio pfSense. Al igual que en las otras redes, se monitoriza específicamente cualquier intento de acceso a la interfaz web del firewall para garantizar el aislamiento total de esta zona de bajo nivel de confianza. Estas reglas permiten registrar comportamientos anómalos o intentos de reconocimiento interno, cumpliendo con el objetivo de detección de amenazas en tiempo real del laboratorio.<br>
+<img width="598" height="404" alt="image" src="https://github.com/user-attachments/assets/6716ff78-3e0f-4082-9378-790db1b7d30e" /><br>
+En el segmento de administración, no se han definido alertas para el tráfico saliente debido a su condición de zona de confianza con acceso total a la infraestructura. Al estar autorizada para interactuar con las redes de empleados, invitados y la gestión de pfSense, sus comunicaciones se consideran legítimas según la jerarquía de seguridad y el control de tráfico establecidos en el laboratorio.<br>
 
 
 
