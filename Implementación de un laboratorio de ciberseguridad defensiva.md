@@ -118,6 +118,13 @@ En el segmento de administración, no se han definido alertas para el tráfico s
 
 
 
+Se ha procedido a elevar las capacidades de la infraestructura defensiva mediante la transición de Suricata de un modo puramente IDS a uno IPS (Sistema de Prevención de Intrusiones). Para ello, se ha habilitado la opción "Block offenders" en todas las interfaces, a excepción del segmento de administración, garantizando así la protección activa y la detección de amenazas en tiempo real.
+La elección del modo "legacy" y el bloqueo tanto de la IP de origen como de destino refuerza la estrategia de limitar el movimiento lateral entre redes. Esta configuración asegura que, ante una alerta, la comunicación se corte por completo, impidiendo que un posible atacante avance incluso si lograra acceder a un equipo de destino.
+Para evitar interrupciones accidentales en la gestión de la infraestructura, se ha definido una pass list que incluye exclusivamente a la red de administración, el segmento destinado a los equipos críticos y servidores. Con este ajuste, el firewall (pfSense + Suricata) no solo monitoriza, sino que controla y mitiga activamente el tráfico malicioso entre la red interna y la externa.<br>
+<img width="594" height="347" alt="image" src="https://github.com/user-attachments/assets/9f31b6e5-318c-4c77-a702-e0feb4141128" /><br>
+
+
+
 
 
 
