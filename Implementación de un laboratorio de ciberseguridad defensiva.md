@@ -121,6 +121,22 @@ La elección del modo "legacy" y el bloqueo tanto de la IP de origen como de des
 Para evitar interrupciones accidentales en la gestión de la infraestructura, se ha definido una pass list que incluye exclusivamente a la red de administración, el segmento destinado a los equipos críticos y servidores. Con este ajuste, el firewall (pfSense + Suricata) no solo monitoriza, sino que controla y mitiga activamente el tráfico malicioso entre la red interna y la externa.<br>
 <img width="594" height="347" alt="image" src="https://github.com/user-attachments/assets/9f31b6e5-318c-4c77-a702-e0feb4141128" /><br>
 
+Se ha integrado el servidor Wazuh en un entorno Ubuntu dentro del segmento de administración, cumpliendo con el objetivo de centralizar la monitorización y gestión de eventos de seguridad del laboratorio. Al ubicar el servidor en esta red, destinada a equipos críticos, se facilita la supervisión de la infraestructura.
+La instalación del agente en la máquina Windows de administración permite que el sistema SIEM comience a recolectar registros específicos de ese nodo. El uso de una IP fija asignada desde pfSense es una medida técnica adecuada, ya que garantiza que el flujo de datos desde los agentes hacia el servidor no se interrumpa, permitiendo una detección de amenazas constante y una identificación clara de cada dispositivo en la consola de gestión.<br>
+<img width="570" height="408" alt="image" src="https://github.com/user-attachments/assets/4212c74e-054c-4d02-8884-36b1015e0460" /><br>
+
+Se ha activado el agente de Wazuh en el cliente Windows de la red de administración, permitiendo la monitorización centralizada de este equipo crítico. Con esto, el SIEM ya recibe telemetría en tiempo real para detectar amenazas en el segmento más restringido de la infraestructura.<br>
+<img width="596" height="237" alt="image" src="https://github.com/user-attachments/assets/27201fd2-c84a-4294-bb5a-12f656b5864d" /><br>
+
+Tras instalar el agente en el cliente ubicado en la red de empleados, esta red se integra en el sistema de monitorización centralizada de Wazuh. Una vez establecida la conexión, el SIEM permitirá supervisar la actividad y detectar amenazas en este segmento de usuarios habituales, reforzando la visibilidad global de la infraestructura.<br>
+<img width="604" height="276" alt="image" src="https://github.com/user-attachments/assets/c68aa12f-3854-40fc-a73c-f97b9c45666a" /><br>
+
+Las simulaciones de ataque desde la red externa validan el éxito de la arquitectura defensiva:
+Bloqueo Perimetral: La política de denegación total en pfSense impide pings y escaneos, haciendo que la red interna sea invisible desde la WAN.
+Prevención Activa: Cualquier intento de conexión sospechosa es detectado por Suricata (IPS), el cual bloquearía automáticamente la IP atacante al estar en modo "Block offenders" [2, Conversación previa].
+Protección de Activos: Los equipos críticos y el servidor Wazuh permanecen aislados y seguros, confirmando la eficacia de la segmentación implementada.<br>
+<img width="593" height="546" alt="image" src="https://github.com/user-attachments/assets/b727c01a-ec9b-4877-babc-6254fb31ae5e" /><br>
+
 
 
 
