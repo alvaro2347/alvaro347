@@ -101,10 +101,10 @@ Se ha activado Suricata en todas las interfaces (WAN, administración, empleados
 
 
 Se han definido las primeras alertas en la interfaz WAN de Suricata, orientadas a identificar actividades sospechosas dirigidas tanto al firewall pfSense como a la infraestructura interna, cumpliendo con el objetivo de detectar amenazas en tiempo real.
-Estas reglas permiten una monitorización detallada mediante los siguientes criterios:
-Protección del Firewall: Se han implementado alertas para detectar tráfico ICMP (ping) y accesos a la interfaz web de pfSense, lo cual es fundamental ya que es el único nodo expuesto directamente a la red externa.
-Detección de Reconocimiento: Mediante el uso de umbrales específicos (parámetro de 5 conexiones en 10 segundos), el sistema es capaz de identificar intentos de escaneo de puertos realizados con herramientas como nmap, alertando sobre fases de reconocimiento de posibles atacantes.
-Visibilidad de la Red Interna: A través de la variable $HOME_NET, se ha extendido la vigilancia para detectar pings o múltiples intentos de conexión hacia cualquiera de los segmentos internos (administración, empleados e invitados).
+Estas reglas permiten una monitorización detallada mediante los siguientes criterios:<br>
+Protección del Firewall: Se han implementado alertas para detectar tráfico ICMP (ping) y accesos a la interfaz web de pfSense, lo cual es fundamental ya que es el único nodo expuesto directamente a la red externa.<br>
+Detección de Reconocimiento: Mediante el uso de umbrales específicos (parámetro de 5 conexiones en 10 segundos), el sistema es capaz de identificar intentos de escaneo de puertos realizados con herramientas como nmap, alertando sobre fases de reconocimiento de posibles atacantes.<br>
+Visibilidad de la Red Interna: A través de la variable $HOME_NET, se ha extendido la vigilancia para detectar pings o múltiples intentos de conexión hacia cualquiera de los segmentos internos (administración, empleados e invitados).<br>
 Con esta configuración, el laboratorio cuenta ahora con la capacidad de registrar cualquier interacción no autorizada desde la WAN, proporcionando la visibilidad necesaria antes de realizar la transición al bloqueo activo de tráfico malicioso.<br>
 <img width="596" height="403" alt="image" src="https://github.com/user-attachments/assets/025f1d22-0ab3-4f67-aed4-9f4836c876c7" /><br>
 
