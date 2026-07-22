@@ -131,9 +131,9 @@ Se ha activado el agente de Wazuh en el cliente Windows de la red de administrac
 Tras instalar el agente en el cliente ubicado en la red de empleados, esta red se integra en el sistema de monitorización centralizada de Wazuh. Una vez establecida la conexión, el SIEM permitirá supervisar la actividad y detectar amenazas en este segmento de usuarios habituales, reforzando la visibilidad global de la infraestructura.<br>
 <img width="604" height="276" alt="image" src="https://github.com/user-attachments/assets/c68aa12f-3854-40fc-a73c-f97b9c45666a" /><br>
 
-Las simulaciones de ataque desde la red externa validan el éxito de la arquitectura defensiva:
-Bloqueo Perimetral: La política de denegación total en pfSense impide pings y escaneos, haciendo que la red interna sea invisible desde la WAN.
-Prevención Activa: Cualquier intento de conexión sospechosa es detectado por Suricata (IPS), el cual bloquearía automáticamente la IP atacante al estar en modo "Block offenders" [2, Conversación previa].
+Las simulaciones de ataque desde la red externa validan el éxito de la arquitectura defensiva:<br>
+Bloqueo Perimetral: La política de denegación total en pfSense impide pings y escaneos, haciendo que la red interna sea invisible desde la WAN.<br>
+Prevención Activa: Cualquier intento de conexión sospechosa es detectado por Suricata (IPS), el cual bloquearía automáticamente la IP atacante al estar en modo "Block offenders" [2, Conversación previa].<br>
 Protección de Activos: Los equipos críticos y el servidor Wazuh permanecen aislados y seguros, confirmando la eficacia de la segmentación implementada.<br>
 <img width="593" height="546" alt="image" src="https://github.com/user-attachments/assets/b727c01a-ec9b-4877-babc-6254fb31ae5e" /><br>
 
