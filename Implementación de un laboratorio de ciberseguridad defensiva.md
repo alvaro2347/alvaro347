@@ -137,11 +137,14 @@ Prevención Activa: Cualquier intento de conexión sospechosa es detectado por S
 Protección de Activos: Los equipos críticos y el servidor Wazuh permanecen aislados y seguros, confirmando la eficacia de la segmentación implementada.<br>
 <img width="593" height="546" alt="image" src="https://github.com/user-attachments/assets/b727c01a-ec9b-4877-babc-6254fb31ae5e" /><br>
 
+La visualización de los registros en Suricata confirma la detección de amenazas en tiempo real, validando las alertas de red configuradas. Al estar activo el modo IPS, cada registro indica que el sistema ha bloqueado automáticamente las IPs atacantes, protegiendo con éxito los segmentos de administración, empleados e invitados.<br>
+<img width="602" height="351" alt="image" src="https://github.com/user-attachments/assets/38c99e36-db42-45c2-8f9f-579a0674ebda" /><br>
 
+Las pruebas en la red de invitados confirman el éxito del aislamiento: pfSense bloquea el movimiento lateral hacia administración y empleados, además de proteger su propia gestión contra escaneos. Al detectarse estas acciones, Suricata (IPS) mitiga la amenaza bloqueando automáticamente la IP del atacante, cumpliendo con los objetivos de seguridad del laboratorio.<br>
+<img width="595" height="519" alt="image" src="https://github.com/user-attachments/assets/9971b82d-f6fc-447e-8f9a-5fcda106c61d" /><br>
 
-
-
-
+La regla de cinco intentos en diez segundos identifica eficazmente patrones de escaneo sin saturar los registros, permitiendo una monitorización continua. Al operar en modo IPS, Suricata bloquea automáticamente la IP atacante, lo que neutraliza la amenaza de inmediato y previene el movimiento lateral hacia los segmentos de empleados o administración. Este proceso de seguridad se centraliza en Wazuh para su análisis, mientras que la lista de paso protege la operatividad de la red de administración, asegurando que los equipos críticos mantengan su conexión en todo momento.<br>
+<img width="593" height="445" alt="image" src="https://github.com/user-attachments/assets/3b0b1424-6cd8-49a3-ad58-50499857f5a2" /><br>
 
 
 
