@@ -150,7 +150,7 @@ Desde la plataforma Wazuh se centraliza la gestión de seguridad al detectar y c
 <img width="598" height="485" alt="image" src="https://github.com/user-attachments/assets/db50379b-25b3-4161-a8dc-bc6e1f412a3f" /><br>
 
 Es posible acceder a información detallada de la vulnerabilidad que afecta a la máquina, en la siguiente imagen es posible observar dicha información<br>
-<img width="602" height="304" alt="image" src="https://github.com/user-attachments/assets/8070d524-4635-405c-a6a8-f845864e807c" /><br>
+<img width="602" height="299" alt="image" src="https://github.com/user-attachments/assets/f72af999-7906-4947-b41a-3e59da62a5e2" /><br>
 
 La monitorización de logs de eventos en Wazuh, como los inicios de sesión en Windows, es fundamental para cumplir el objetivo de centralizar la gestión de seguridad y detectar actividades sospechosas en tiempo real. Esta visibilidad permite supervisar los activos en las redes de administración y empleados, garantizando que el administrador tenga un control total sobre las acciones realizadas dentro de la infraestructura segmentada.<br>
 <img width="609" height="426" alt="image" src="https://github.com/user-attachments/assets/d30f2719-07dd-4418-8ae4-77c6600f657b" /><br>
