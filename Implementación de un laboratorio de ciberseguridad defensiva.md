@@ -167,9 +167,9 @@ Este hallazgo en los detalles del log confirma que el servidor Wazuh, ubicado en
 
 <br>Las simulaciones realizadas confirman que la arquitectura defensiva diseñada ha transformado con éxito una infraestructura vulnerable en un entorno seguro, monitorizado y capaz de responder ante incidentes.
 El éxito de este laboratorio se sustenta en tres capacidades críticas validadas por tus pruebas:<br>
-Protección y Aislamiento: El firewall (pfSense) y la segmentación de red han demostrado ser eficaces al impedir el acceso no autorizado desde la WAN y restringir el movimiento lateral desde la red de invitados, protegiendo así los activos críticos en el segmento de administración.
-Detección y Mitigación Activa: La integración de Suricata (IDS/IPS) permitió identificar patrones de ataque en tiempo real, como escaneos de puertos y pings, bloqueando automáticamente al atacante para neutralizar la amenaza antes de que progresara.
-Visibilidad y Gestión Centralizada: El SIEM (Wazuh) cumplió su función de centralizar los registros, permitiendo no solo la detección de vulnerabilidades (CVE) para una remediación proactiva, sino también la monitorización detallada de eventos internos, como inicios de sesión y ejecuciones de comandos con privilegios de root (sudo).
+Protección y Aislamiento: El firewall (pfSense) y la segmentación de red han demostrado ser eficaces al impedir el acceso no autorizado desde la WAN y restringir el movimiento lateral desde la red de invitados, protegiendo así los activos críticos en el segmento de administración.<br>
+Detección y Mitigación Activa: La integración de Suricata (IDS/IPS) permitió identificar patrones de ataque en tiempo real, como escaneos de puertos y pings, bloqueando automáticamente al atacante para neutralizar la amenaza antes de que progresara.<br>
+Visibilidad y Gestión Centralizada: El SIEM (Wazuh) cumplió su función de centralizar los registros, permitiendo no solo la detección de vulnerabilidades (CVE) para una remediación proactiva, sino también la monitorización detallada de eventos internos, como inicios de sesión y ejecuciones de comandos con privilegios de root (sudo).<br>
 En definitiva, las pruebas demuestran que la combinación de estas tecnologías permite pasar de una postura reactiva a una defensa proactiva, garantizando que cualquier acción sospechosa sea registrada y alertada para proteger la integridad de la pequeña empresa.
 
 
