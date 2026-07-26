@@ -147,6 +147,24 @@ La regla de cinco intentos en diez segundos identifica eficazmente patrones de e
 <img width="593" height="445" alt="image" src="https://github.com/user-attachments/assets/3b0b1424-6cd8-49a3-ad58-50499857f5a2" /><br>
 
 
+Desde la plataforma Wazuh se centraliza la gestión de seguridad al detectar y categorizar las vulnerabilidades de los equipos en red según su nivel de criticidad. En este escenario, el SIEM identificó una vulnerabilidad crítica, 119 altas, 34 medias y una baja, proporcionando para cada una el identificador CVE, una descripción técnica y enlaces de investigación. Esta funcionalidad es clave para mejorar la visibilidad de la infraestructura y permitir la corrección proactiva de fallos, alineándose con los objetivos de protección y monitorización centralizada del laboratorio.<br>
+<img width="598" height="485" alt="image" src="https://github.com/user-attachments/assets/db50379b-25b3-4161-a8dc-bc6e1f412a3f" /><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
