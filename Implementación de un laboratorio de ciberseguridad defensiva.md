@@ -146,15 +146,31 @@ Las pruebas en la red de invitados confirman el éxito del aislamiento: pfSense 
 La regla de cinco intentos en diez segundos identifica eficazmente patrones de escaneo sin saturar los registros, permitiendo una monitorización continua. Al operar en modo IPS, Suricata bloquea automáticamente la IP atacante, lo que neutraliza la amenaza de inmediato y previene el movimiento lateral hacia los segmentos de empleados o administración. Este proceso de seguridad se centraliza en Wazuh para su análisis, mientras que la lista de paso protege la operatividad de la red de administración, asegurando que los equipos críticos mantengan su conexión en todo momento.<br>
 <img width="593" height="445" alt="image" src="https://github.com/user-attachments/assets/3b0b1424-6cd8-49a3-ad58-50499857f5a2" /><br>
 
-
 Desde la plataforma Wazuh se centraliza la gestión de seguridad al detectar y categorizar las vulnerabilidades de los equipos en red según su nivel de criticidad. En este escenario, el SIEM identificó una vulnerabilidad crítica, 119 altas, 34 medias y una baja, proporcionando para cada una el identificador CVE, una descripción técnica y enlaces de investigación. Esta funcionalidad es clave para mejorar la visibilidad de la infraestructura y permitir la corrección proactiva de fallos, alineándose con los objetivos de protección y monitorización centralizada del laboratorio.<br>
 <img width="598" height="485" alt="image" src="https://github.com/user-attachments/assets/db50379b-25b3-4161-a8dc-bc6e1f412a3f" /><br>
 
+Es posible acceder a información detallada de la vulnerabilidad que afecta a la máquina, en la siguiente imagen es posible observar dicha información<br>
+<img width="602" height="304" alt="image" src="https://github.com/user-attachments/assets/8070d524-4635-405c-a6a8-f845864e807c" /><br>
 
+La monitorización de logs de eventos en Wazuh, como los inicios de sesión en Windows, es fundamental para cumplir el objetivo de centralizar la gestión de seguridad y detectar actividades sospechosas en tiempo real. Esta visibilidad permite supervisar los activos en las redes de administración y empleados, garantizando que el administrador tenga un control total sobre las acciones realizadas dentro de la infraestructura segmentada.<br>
+<img width="609" height="426" alt="image" src="https://github.com/user-attachments/assets/d30f2719-07dd-4418-8ae4-77c6600f657b" /><br>
 
+Esta capacidad de inspección profunda en los registros es lo que permite al servidor Wazuh cumplir su función de centralizar registros y generar alertas de seguridad con precisión. Al proporcionar datos específicos como el ID, la IP del equipo y el usuario involucrado, el sistema ofrece la trazabilidad necesaria para detectar amenazas en tiempo real y diferenciar actividades legítimas de posibles intrusiones.
+Contar con este nivel de detalle es vital para proteger los activos de la red de administración, donde se encuentran los equipos críticos, asegurando que cualquier inicio de sesión inesperado pueda ser investigado y mitigado de inmediato para mantener la integridad de la infraestructura.<br>
+<img width="606" height="764" alt="image" src="https://github.com/user-attachments/assets/feda13ea-aba9-4012-bddc-537485265a49" /><br>
 
+Esta simulación confirma que Wazuh centraliza eficazmente registros críticos como conexiones SSH y escaladas de privilegios mediante sudo. Al alertar sobre un acceso root en el servidor de la red de administración, el sistema garantiza la visibilidad necesaria para detectar y responder de inmediato ante un compromiso total de la infraestructura defensiva.<br>
+<img width="598" height="586" alt="image" src="https://github.com/user-attachments/assets/3b601a28-0e55-4748-9919-c40786b5310e" /><br>
 
+Este hallazgo en los detalles del log confirma que el servidor Wazuh, ubicado en la red de administración destinada a equipos críticos, ha sufrido un compromiso de máxima gravedad. La capacidad del SIEM para registrar no solo la escalada de privilegios, sino el comando exacto de visualización de contraseñas, es fundamental para la detección de amenazas en tiempo real y para confirmar que el atacante ha obtenido control total sobre el sistema. Este nivel de visibilidad técnica valida el objetivo principal de centralizar la monitorización de eventos, permitiendo identificar y evaluar de forma precisa incidentes que comprometen la integridad de toda la infraestructura defensiva.<br>
+<img width="600" height="284" alt="image" src="https://github.com/user-attachments/assets/bcf1a0ea-7889-42fe-99be-2264196e29d8" /><br>
 
+<br>Las simulaciones realizadas confirman que la arquitectura defensiva diseñada ha transformado con éxito una infraestructura vulnerable en un entorno seguro, monitorizado y capaz de responder ante incidentes.
+El éxito de este laboratorio se sustenta en tres capacidades críticas validadas por tus pruebas:<br>
+Protección y Aislamiento: El firewall (pfSense) y la segmentación de red han demostrado ser eficaces al impedir el acceso no autorizado desde la WAN y restringir el movimiento lateral desde la red de invitados, protegiendo así los activos críticos en el segmento de administración.
+Detección y Mitigación Activa: La integración de Suricata (IDS/IPS) permitió identificar patrones de ataque en tiempo real, como escaneos de puertos y pings, bloqueando automáticamente al atacante para neutralizar la amenaza antes de que progresara.
+Visibilidad y Gestión Centralizada: El SIEM (Wazuh) cumplió su función de centralizar los registros, permitiendo no solo la detección de vulnerabilidades (CVE) para una remediación proactiva, sino también la monitorización detallada de eventos internos, como inicios de sesión y ejecuciones de comandos con privilegios de root (sudo).
+En definitiva, las pruebas demuestran que la combinación de estas tecnologías permite pasar de una postura reactiva a una defensa proactiva, garantizando que cualquier acción sospechosa sea registrada y alertada para proteger la integridad de la pequeña empresa.
 
 
 
