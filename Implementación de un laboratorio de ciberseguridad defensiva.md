@@ -160,7 +160,7 @@ Contar con este nivel de detalle es vital para proteger los activos de la red de
 <img width="606" height="764" alt="image" src="https://github.com/user-attachments/assets/feda13ea-aba9-4012-bddc-537485265a49" /><br>
 
 Esta simulación confirma que Wazuh centraliza eficazmente registros críticos como conexiones SSH y escaladas de privilegios mediante sudo. Al alertar sobre un acceso root en el servidor de la red de administración, el sistema garantiza la visibilidad necesaria para detectar y responder de inmediato ante un compromiso total de la infraestructura defensiva.<br>
-<img width="598" height="586" alt="image" src="https://github.com/user-attachments/assets/3b601a28-0e55-4748-9919-c40786b5310e" /><br>
+<img width="595" height="585" alt="image" src="https://github.com/user-attachments/assets/6c28b647-dbc7-4164-af68-ee51f4ba6349" /><br>
 
 Este hallazgo en los detalles del log confirma que el servidor Wazuh, ubicado en la red de administración destinada a equipos críticos, ha sufrido un compromiso de máxima gravedad. La capacidad del SIEM para registrar no solo la escalada de privilegios, sino el comando exacto de visualización de contraseñas, es fundamental para la detección de amenazas en tiempo real y para confirmar que el atacante ha obtenido control total sobre el sistema. Este nivel de visibilidad técnica valida el objetivo principal de centralizar la monitorización de eventos, permitiendo identificar y evaluar de forma precisa incidentes que comprometen la integridad de toda la infraestructura defensiva.<br>
 <img width="600" height="284" alt="image" src="https://github.com/user-attachments/assets/bcf1a0ea-7889-42fe-99be-2264196e29d8" /><br>
