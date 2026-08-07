@@ -16,7 +16,7 @@ Nmap, gobuster, dirb, dirbuster, hydra, John the ripper, GTFOBins, Wireshark, Bu
 Laboratorio utilizando la máquina vulnerable Metasploitable:
 > [Metasploitable](https://github.com/alvaro2347/alvaro347/blob/main/Metasploitable/Metasploitable.md) <br>
 ---
-###  Máquinas Tryhackme <br>
+###  Máquinas TryHackMe <br>
 > [BLUE](https://github.com/alvaro2347/alvaro347/blob/main/Blue.md) <br>
 >[RootMe](https://github.com/alvaro2347/alvaro347/blob/main/RootMe.md)<br>
 >[Simple CTF](https://github.com/alvaro2347/alvaro347/blob/main/Simple%20CTF.md)<br>
